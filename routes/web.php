@@ -14,3 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'FrontController@home');
+
+Route::get('inner-page', function () {
+
+    return view('inner-page');
+
+});
+
+Auth::routes();
+
+Route::group(['middleware' => ['auth'],'prefix'=>'admin','namespace'=>'Admin'], function () {
+    Route::get('dashboard', 'DashboardController@dashboard');
+
+
+});
+
+
