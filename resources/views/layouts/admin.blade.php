@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{{\App\Setting::setting()->app_name}} - Dashboards</title>
+    <title>Cerebral Palsy - Dashboards</title>
 
     <!-- Custom fonts for this template-->
     <link href="/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -55,7 +55,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Antorongo <sup></sup></div>
+                <div class="sidebar-brand-text mx-3">CPT <sup></sup></div>
             </a>
 
             <!-- Divider -->
@@ -71,17 +71,10 @@
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-
             <li class="nav-item active">
-                <a class="nav-link" href="/admin/message">
-                    <i class="fas fa-fw fa-comment"></i>
-                    <span>বার্তা</span></a>
-            </li>
-
-            <li class="nav-item active">
-                <a class="nav-link" href="/admin/balance">
+                <a class="nav-link" href="#">
                     <i class="fas fa-coins"></i>
-                    <span>ব্যালেন্স সমূহ </span>
+                    <span>Lorem, ipsum. </span>
                 </a>
             </li>
 
@@ -89,241 +82,14 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#memberNav"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-users"></i>
-                    <span>সদস্য ম্যানেজমেন্ট</span>
+                    <span>Dropdown</span>
                 </a>
                 <div id="memberNav" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{url('admin/members/find')}}">সদস্য খুঁজুন </a>
-                        <a class="collapse-item" href="{{url('admin/members')}}" >সদস্য তালিকা  </a>
-                        <a class="collapse-item" href="{{url('admin/members?project=founding_member')}}" > পরিচালক সদস্য তালিকা  </a>
+                        <a class="collapse-item" href="{{url('admin/members/find')}}">Level 2 </a>
                     </div>
                 </div>
             </li>
-
-
-
-            <div class="sidebar-heading">
-                সঞ্চয়
-            </div>
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#shortSaving"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-hand-holding-usd"></i>
-                    <span>স্বল্প মেয়াদী সঞ্চয়</span>
-                </a>
-                <div id="shortSaving" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{url('admin/saving/short/application')}}">আবেদন  </a>
-                        <a class="collapse-item" href="{{url('admin/saving/short/list')}}">সঞ্চয় তালিকা</a>
-                        <!--<a class="collapse-item" href="{{url('admin/saving/find')}}" > <span>আদায়/ কালেকশন </span></a>-->
-                        <a class="collapse-item" href="{{url('admin/saving/short/collection-report')}}" > <span>আদায় রিপোর্ট</span></a>
-                        <!--<a class="collapse-item" href="{{url('admin/saving/short/withdraw')}}">সঞ্চয় উত্তোলন</a>-->
-                        <a class="collapse-item" href="{{url('admin/saving/short/withdraw-report')}}" > <span>উত্তোলন রিপোর্ট</span></a>
-                        <a class="collapse-item" href="{{url('admin/saving/short/packages')}}" > <span>পাকেজসমুহ</span></a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#longSaving"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-hand-holding-usd"></i>
-                    <span>দীর্ঘ মেয়াদী সঞ্চয়</span>
-                </a>
-                <div id="longSaving" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{url('admin/saving/long/application')}}">আবেদন  </a>
-                        <a class="collapse-item" href="{{url('admin/saving/long/list')}}">সঞ্চয় তালিকা</a>
-                        <!--<a class="collapse-item" href="{{url('admin/saving/long/withdraw')}}">সঞ্চয় উত্তোলন</a>
-                        <a class="collapse-item" href="{{url('admin/saving/find')}}" > <span>আদায়/ কালেকশন </span></a>-->
-                        <a class="collapse-item" href="{{url('admin/saving/long/collection-report')}}" > <span>আদায় রিপোর্ট</span></a>
-                        <a class="collapse-item" href="{{url('admin/saving/long/withdraw-report')}}" > <span>উত্তোলন রিপোর্ট</span></a>
-                        <a class="collapse-item" href="{{url('admin/saving/long/packages')}}" > <span>পাকেজসমুহ</span></a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#dailySaving"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-hand-holding-usd"></i>
-                    <span>দৈনিক সঞ্চয়</span>
-                </a>
-                <div id="dailySaving" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{url('admin/saving/daily/application')}}">আবেদন  </a>
-                        <a class="collapse-item" href="{{url('admin/saving/daily/list')}}">সঞ্চয় তালিকা</a>
-                        <!--<a class="collapse-item" href="{{url('admin/saving/daily/withdraw')}}">সঞ্চয় উত্তোলন</a>
-                        <a class="collapse-item" href="{{url('admin/saving/find')}}" > <span>আদায়/ কালেকশন </span></a>-->
-                        <a class="collapse-item" href="{{url('admin/saving/daily/collection-report')}}" > <span>আদায় রিপোর্ট</span></a>
-                        <a class="collapse-item" href="{{url('admin/saving/daily/withdraw-report')}}" > <span>উত্তোলন রিপোর্ট</span></a>
-                        <a class="collapse-item" href="{{url('admin/saving/daily/packages')}}" > <span>পাকেজসমুহ</span></a>
-                    </div>
-                </div>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#currentSaving"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-hand-holding-usd"></i>
-                    <span>সাধারণ সঞ্চয়(সেভিংস )</span>
-                </a>
-                <div id="currentSaving" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{url('admin/saving/current/application')}}">আবেদন  </a>
-                        <a class="collapse-item" href="{{url('admin/saving/current/list')}}">সঞ্চয় তালিকা</a>
-                        <a class="collapse-item" href="{{url('admin/saving/current/collection-report')}}" > <span>আদায় রিপোর্ট</span></a>
-                        <a class="collapse-item" href="{{url('admin/saving/current/withdraw-report')}}" > <span>উত্তোলন রিপোর্ট</span></a>
-
-                    </div>
-                </div>
-            </li>
-
-
-            <div class="sidebar-heading">
-                আমানত
-            </div>
-
-            <li class="nav-item">
-                <a class="nav-link" href="/admin/founder-deposit">
-                    <i class="fas fa-fw fa-hand-holding-usd"></i>
-                    <span>পরিচালকের আমানত</span></a>
-            </li>
-
-            <div class="sidebar-heading">
-                এফ ডি আর
-            </div>
-
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#fdrNav"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-hand-holding-usd"></i>
-                    <span>এফ ডি আর ম্যানেজমেন্ট</span>
-                </a>
-                <div id="fdrNav" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{url('admin/fdr/application')}}">আবেদন  </a>
-                        <a class="collapse-item" href="{{url('admin/fdr/list')}}">এফ ডি আর তালিকা  </a>
-                        <a class="collapse-item" href="{{url('admin/fdr/profit-report')}}" >লাভের রিপোর্ট  </a>
-                        <!--<a class="collapse-item" href="{{url('admin/fdr/withdraw')}}">এফ ডি আর উত্তোলন  </a>-->
-                        <a class="collapse-item" href="{{url('admin/fdr/withdraw-report')}}" >উত্তোলন রিপোর্ট  </a>
-                    </div>
-                </div>
-            </li>
-
-
-            <div class="sidebar-heading">
-                ঋণ
-            </div>
-
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#loanNav"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-hand-holding-usd"></i>
-                    <span>ঋণ ম্যানেজমেন্ট</span>
-                </a>
-                <div id="loanNav" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{url('admin/loan/application')}}">ঋণ আবেদন  </a>
-                        <a class="collapse-item" href="{{url('admin/loan/find')}}">ঋণ খুঁজুন  </a>
-                        <a class="collapse-item" href="{{url('admin/loan/list')}}" >ঋণ তালিকা  </a>
-                        <!--<a class="collapse-item" href="{{url('admin/collection/collect')}}">কালেকশন/আদায় করুন  </a>-->
-                        <a class="collapse-item" href="{{url('admin/collection/report')}}" >কালেকশন/আদায় রিপোর্ট  </a>
-                    </div>
-                </div>
-            </li>
-
-
-            <div class="sidebar-heading">
-                লেনদেন
-            </div>
-
-
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#incomeNav"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-arrow-circle-right"></i>
-                    <span>আয়</span>
-                </a>
-                <div id="incomeNav" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{url('admin/transaction-head/income')}}">আয়ের খাত  </a>
-                        <a class="collapse-item" href="{{url('admin/income/create')}}">আয় যোগ করুন  </a>
-                        <a class="collapse-item" href="{{url('admin/income/')}}" > <span> আয়ের রিপোর্ট  </a>
-                    </div>
-                </div>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#expenseNav"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-arrow-alt-circle-left"></i>
-                    <span>ব্যয়</span>
-                </a>
-                <div id="expenseNav" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{url('admin/transaction-head/expense')}}">ব্যয় এর খাত  </a>
-                        <a class="collapse-item" href="{{url('admin/expense/create')}}">ব্যয় যোগ করুন  </a>
-                        <a class="collapse-item" href="{{url('admin/expense/')}}" > <span> ব্যয় এর রিপোর্ট  </a>
-                    </div>
-                </div>
-            </li>
-
-
-            <div class="sidebar-heading">
-                অন্যান্য
-            </div>
-
-
-            <li class="nav-item active">
-                <a class="nav-link" href="{{url('admin/meeting')}}">
-                    <i class="fas fa-handshake"></i>
-                    <span>মিটিং</span></a>
-            </li>
-
-            <li class="nav-item active">
-                <a class="nav-link" href="{{url('admin/documents')}}">
-                    <i class="far fa-file"></i>
-                    <span>ডকুমেন্ট</span></a>
-            </li>
-
-
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#hrNav"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-compress-arrows-alt"></i>
-                    <span>এইচআর বিভাগ</span>
-                </a>
-                <div id="hrNav" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{url('admin/users')}}" >কর্মচারী </a>
-                        <a class="collapse-item" href="{{url('admin/roles')}}" >পদবি </a>
-                        <a class="collapse-item" href="{{url('admin/hr/salary-setup')}}" > বেতন সেট করুন  </a>
-                        <a class="collapse-item" href="{{url('admin/hr/salary-payment')}}" > <span>বেতন পরিশোধ করুন  </a>
-                    </div>
-                </div>
-            </li>
-
-
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#reportNav"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-chart-bar"></i>
-                    <span>রিপোর্ট</span>
-                </a>
-                <div id="reportNav" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        {{-- <a class="collapse-item" href="{{url('admin/statement/customize')}}" >দৈনিক/মাসিক/ বাৎসরিক </a> --}}
-                        <a class="collapse-item" href="{{url('admin/statement/daily-statement')}}" >স্টেটমেন্ট </a>
-
-                    </div>
-                </div>
-            </li>
-
 
 
 
@@ -527,10 +293,7 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="/profile">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
-                                </a>
+
                                 {{-- <a class="dropdown-item" href="#">
                                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Activity Log
