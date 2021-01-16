@@ -18,6 +18,64 @@
     </div>
   </section><!-- End Breadcrumbs Section -->
 
+  <section id="doctors" class="doctors section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Patients</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+      <div class="row">
+
+
+        @for ($i = 0; $i < 10; $i++)
+
+        <div class="col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="row">
+                  <div class="member-img col-md-6">
+                      <img src="/front/img/doctors/doctors-1.jpg" class="img-fluid" alt="">
+                      {{-- <div class="social">
+                        <a href=""><i class="icofont-twitter"></i></a>
+                        <a href=""><i class="icofont-facebook"></i></a>
+                        <a href=""><i class="icofont-instagram"></i></a>
+                        <a href=""><i class="icofont-linkedin"></i></a>
+                      </div> --}}
+                      <p class="text-info text-center">Before</p>
+                    </div>
+
+                    <div class="member-img col-md-6">
+                      <img src="/front/img/doctors/doctors-1.jpg" class="img-fluid" alt="">
+                      {{-- <div class="social">
+                        <a href=""><i class="icofont-twitter"></i></a>
+                        <a href=""><i class="icofont-facebook"></i></a>
+                        <a href=""><i class="icofont-instagram"></i></a>
+                        <a href=""><i class="icofont-linkedin"></i></a>
+                      </div> --}}
+                      <p class="text-info text-center">After</p>
+                    </div>
+              </div>
+              <div class="member-info">
+                <h4>Jon Doe</h4>
+                <span>Dhaka, Bangladesh</span>
+              </div>
+            </div>
+          </div>
+
+
+        @endfor
+
+
+
+
+
+      </div>
+
+    </div>
+  </section><!-- End Doctors Section -->
+
+
   <section id="testimonials" class="testimonials">
     <div class="container aos-init aos-animate" data-aos="fade-up">
 
