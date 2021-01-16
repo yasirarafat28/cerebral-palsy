@@ -21,7 +21,7 @@
   <link href="/front/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="/front/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="/front/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="/front/vendor/owl.carousel//front/owl.carousel.min.css" rel="stylesheet">
+  <link href="/front/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="/front/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="/front/vendor/aos/aos.css" rel="stylesheet">
 
@@ -72,7 +72,7 @@
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="{{url('/appoinment')}}" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a>
+      <a href="{{url('/appointment')}}" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a>
 
     </div>
   </header><!-- End Header -->
