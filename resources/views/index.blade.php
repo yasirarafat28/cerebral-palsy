@@ -71,10 +71,6 @@
             Treatment for cerebral palsy can be complex, addressing a wide range of individual symptoms and conditions. As a result, doctors and medical specialists from multiple disciplines work together improving outcomes for children with CP. Early intervention and treatment have the greatest positive impact. Sadly, a cure for cerebral palsy (C.P) is not yet available; nonetheless, various cerebral palsy treatments and therapies currently exist to enable individuals with this condition to reach their fullest cognitive, emotional and physical potential.
           </p>
 
-          <br>
-          <p>
-            The purpose of treatment is to enhance the quality of life for each patient, creating rewarding outcomes for children with all types of cerebral palsy. By improving overall health and reducing the incidence of complications, treatment reinforces independence and prepares CP patients to lead normal daily lives.
-          </p>
 
         </div>
 
@@ -83,6 +79,9 @@
             <img src="/front/img/poster-1.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <p class="font-italic">
+                The purpose of treatment is to enhance the quality of life for each patient, creating rewarding outcomes for children with all types of cerebral palsy. By improving overall health and reducing the incidence of complications, treatment reinforces independence and prepares CP patients to lead normal daily lives.
+              </p>
             <p class="font-italic">
 
                 Cerebral palsy is a highly individualized disorder, impacting each patient in unique ways. Each patient’s cerebral palsy treatment largely depends on their own individual desires, based on the severity of their situation, as well as other pertinent factors. What to Know About Treatment
@@ -111,7 +110,7 @@
 
         <div class="row no-gutters">
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+          <div class="col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="icofont-doctor-alt"></i>
               <span data-toggle="counter-up">85</span>
@@ -120,7 +119,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+          <div class="col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="icofont-patient-bed"></i>
               <span data-toggle="counter-up">18</span>
@@ -129,23 +128,6 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="icofont-laboratory"></i>
-              <span data-toggle="counter-up">8</span>
-              <p><strong>Research Lab</strong> aut commodi quaerat. Aliquam ratione</p>
-              <a href="#">Find out more &raquo;</a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="icofont-award"></i>
-              <span data-toggle="counter-up">150</span>
-              <p><strong>Awards</strong> rerum asperiores dolor molestiae doloribu</p>
-              <a href="#">Find out more &raquo;</a>
-            </div>
-          </div>
 
         </div>
 
