@@ -34,5 +34,9 @@ class FrontController extends Controller
         return view('appointment');
     }
 
+    public function appointmentSubmit(Request $request){
+
+    }
+
 
 }
