@@ -51,7 +51,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{url('/')}}">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -65,33 +65,32 @@
             <li class="nav-item active">
                 <a class="nav-link" href="/admin/dashboard">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>ড্যাশবোর্ড</span></a>
+                    <span>Dashboard</span></a>
             </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
 
             <li class="nav-item active">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/admin/testimonials">
                     <i class="fas fa-coins"></i>
-                    <span>Lorem, ipsum. </span>
+                    <span>Testimonials</span>
                 </a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#memberNav"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-users"></i>
-                    <span>Dropdown</span>
+            <li class="nav-item active">
+                <a class="nav-link" href="/admin/inquiries">
+                    <i class="fas fa-coins"></i>
+                    <span>Inquiry</span>
                 </a>
-                <div id="memberNav" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{url('admin/members/find')}}">Level 2 </a>
-                    </div>
-                </div>
             </li>
 
-
+            <li class="nav-item active">
+                <a class="nav-link" href="/admin/appointments">
+                    <i class="fas fa-coins"></i>
+                    <span>Appointments</span>
+                </a>
+            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">

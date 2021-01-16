@@ -31,8 +31,9 @@ Auth::routes();
 
 Route::group(['middleware' => ['auth'],'prefix'=>'admin','namespace'=>'Admin'], function () {
     Route::get('dashboard', 'DashboardController@dashboard');
-
-
+    Route::resource('testimonials', 'TestimonialController');
+    Route::resource('inquiries', 'InquiryController');
+    Route::resource('appointments', 'AppointmentController');
 });
 
 

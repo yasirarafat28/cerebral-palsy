@@ -10,7 +10,7 @@
       <div class="d-flex justify-content-between align-items-center">
         <h2>Media Releases</h2>
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="{{url('/')}}">Home</a></li>
           <li>Media Releases</li>
         </ol>
       </div>
@@ -22,7 +22,7 @@
     <div class="container aos-init aos-animate" data-aos="fade-up">
 
       <div class="section-title">
-        <h2>Departments</h2>
+        <h2>Media Release </h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
       </div>
 
