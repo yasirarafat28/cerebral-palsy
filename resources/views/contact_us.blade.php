@@ -8,10 +8,10 @@
     <div class="container">
 
       <div class="d-flex justify-content-between align-items-center">
-        <h2>Know Us</h2>
+        <h2>Contact Us</h2>
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Know Us</li>
+          <li>Contact Us</li>
         </ol>
       </div>
 
@@ -57,7 +57,7 @@
               <div class="info-box mt-4">
                 <i class="bx bx-phone-call"></i>
                 <h3>Call Us</h3>
-                <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                <p><a class="ml-4 text-white" href="tel:01711982665">01711982665</a><br>+1 6678 254445 41</p>
               </div>
             </div>
           </div>

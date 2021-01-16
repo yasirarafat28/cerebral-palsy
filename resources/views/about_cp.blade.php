@@ -8,10 +8,10 @@
     <div class="container">
 
       <div class="d-flex justify-content-between align-items-center">
-        <h2>Know Us</h2>
+        <h2>Cerebral Palsy Treatment</h2>
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Know Us</li>
+          <li>Cerebral Palsy Treatment</li>
         </ol>
       </div>
 

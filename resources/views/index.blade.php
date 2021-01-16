@@ -66,8 +66,16 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>About Us</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Know Us</h2>
+          <p>
+            Treatment for cerebral palsy can be complex, addressing a wide range of individual symptoms and conditions. As a result, doctors and medical specialists from multiple disciplines work together improving outcomes for children with CP. Early intervention and treatment have the greatest positive impact. Sadly, a cure for cerebral palsy (C.P) is not yet available; nonetheless, various cerebral palsy treatments and therapies currently exist to enable individuals with this condition to reach their fullest cognitive, emotional and physical potential.
+          </p>
+
+          <br>
+          <p>
+            The purpose of treatment is to enhance the quality of life for each patient, creating rewarding outcomes for children with all types of cerebral palsy. By improving overall health and reducing the incidence of complications, treatment reinforces independence and prepares CP patients to lead normal daily lives.
+          </p>
+
         </div>
 
         <div class="row">
@@ -75,21 +83,22 @@
             <img src="/front/img/about.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
             <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+
+                Cerebral palsy is a highly individualized disorder, impacting each patient in unique ways. Each patient’s cerebral palsy treatment largely depends on their own individual desires, based on the severity of their situation, as well as other pertinent factors. What to Know About Treatment
+                Physical symptoms are not the only concern for doctors and therapists committed to the needs of CP patients. Social and emotional impacts must also be considered, calling for close collaboration between parents and various medical specialists.
+                Is the child content with his or her condition? Is a particular treatment in the child’s best interest? Are therapy and treatment stressful or demanding, beyond expected benefits?
+                Cerebral Palsy Disease এর রোগি গুলো পৃথিবীর কোথাও চিকিৎসায় ভালো হচ্ছে না! এই চিকিৎসা শুধু আমাদের কাছেই আছে! আমাদের চিকিৎসাধীন রোগি সম্পন্ন ভালো হয়ে যায়! দয়া করে আমাদের চিকিৎসা নেওয়ার আহ্বান জানাচ্ছি! আমাদের অভিজ্ঞ ডাক্তার রোগি ভালো না হলে টাকা নিবেন না!
             </p>
-            <ul>
+            {{-- <ul>
               <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
               <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
               <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
+            </ul> --}}
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
+
+                Dr. Faridul Islam Choudhury, Neurosurgeon, Neuro ICU Consaltant, Neuro Anesthesiologist, MBBS at Sylhet M.A.G Osmani Medical College, Neurosurgeon, Neuro ICU Consaltant, Neuro Anesthesiologist at Shaheed Ziaur Rahman Medical College, Bogura, Studied Post Graduate Diploma in Anesthesiology & critical care medicine at Bangabandhu Sheikh Mujib Medical University, Studied • MS Neurosurgery at Dhaka Medical College - DMC
+              </p>
           </div>
         </div>
 
@@ -304,7 +313,7 @@
     </section><!-- End Gallery Section -->
 
     <!-- ======= Frequently Asked Questioins Section ======= -->
-    <section id="faq" class="faq section-bg">
+    <section id="faq" class="faq section-bg d-none">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
