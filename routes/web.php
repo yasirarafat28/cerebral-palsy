@@ -14,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'FrontController@home');
+Route::get('/about-us', 'FrontController@about_us');
+Route::get('/contact-us', 'FrontController@contact_us');
+Route::get('/cp-treatment', 'FrontController@about_cp');
+Route::get('/media', 'FrontController@media');
+Route::get('/testimonials', 'FrontController@testimonials');
+Route::get('/appointment', 'FrontController@appointment');
 
 Route::get('inner-page', function () {
 

@@ -87,7 +87,7 @@
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a>
+      <a href="/appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a>
 
     </div>
   </header><!-- End Header -->
