@@ -80,7 +80,7 @@
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-right">
-            <img src="/front/img/poser-1.jpg" class="img-fluid" alt="">
+            <img src="/front/img/poster-1.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
             <p class="font-italic">
