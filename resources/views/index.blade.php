@@ -281,14 +281,11 @@
         </div>
 
         <div class="owl-carousel gallery-carousel" data-aos="fade-up" data-aos-delay="100">
-          <a href="/front/img/gallery/gallery-1.jpg" class="venobox" data-gall="gallery-carousel"><img src="/front/img/gallery/gallery-1.jpg" alt=""></a>
-          <a href="/front/img/gallery/gallery-2.jpg" class="venobox" data-gall="gallery-carousel"><img src="/front/img/gallery/gallery-2.jpg" alt=""></a>
-          <a href="/front/img/gallery/gallery-3.jpg" class="venobox" data-gall="gallery-carousel"><img src="/front/img/gallery/gallery-3.jpg" alt=""></a>
-          <a href="/front/img/gallery/gallery-4.jpg" class="venobox" data-gall="gallery-carousel"><img src="/front/img/gallery/gallery-4.jpg" alt=""></a>
-          <a href="/front/img/gallery/gallery-5.jpg" class="venobox" data-gall="gallery-carousel"><img src="/front/img/gallery/gallery-5.jpg" alt=""></a>
-          <a href="/front/img/gallery/gallery-6.jpg" class="venobox" data-gall="gallery-carousel"><img src="/front/img/gallery/gallery-6.jpg" alt=""></a>
-          <a href="/front/img/gallery/gallery-7.jpg" class="venobox" data-gall="gallery-carousel"><img src="/front/img/gallery/gallery-7.jpg" alt=""></a>
-          <a href="/front/img/gallery/gallery-8.jpg" class="venobox" data-gall="gallery-carousel"><img src="/front/img/gallery/gallery-8.jpg" alt=""></a>
+
+            @foreach ($galleries as $item)
+                <a href="{{url($item->file??'')}}" target="_blank" class="venobox" data-gall="gallery-carousel"><img src="{{url($item->file??'')}}" alt=""></a>
+
+            @endforeach
         </div>
 
       </div>
