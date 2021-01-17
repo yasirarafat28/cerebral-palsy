@@ -52,7 +52,7 @@ class SuccessfulTreatmentController extends Controller
         if ($request->hasFile('before_photo')) {
 
             $image      = $request->file('before_photo');
-            $imageName  = 'success_'.date('ymdhis').'.'.$image->getClientOriginalExtension();
+            $imageName  = 'before_'.date('ymdhis').'.'.$image->getClientOriginalExtension();
             $path       = 'images/success/';
             $image->move($path, $imageName);
             $imageUrl   = $path . $imageName;
@@ -62,7 +62,7 @@ class SuccessfulTreatmentController extends Controller
         if ($request->hasFile('after_photo')) {
 
             $image      = $request->file('after_photo');
-            $imageName  = 'success_'.date('ymdhis').'.'.$image->getClientOriginalExtension();
+            $imageName  = 'after_'.date('ymdhis').'.'.$image->getClientOriginalExtension();
             $path       = 'images/success/';
             $image->move($path, $imageName);
             $imageUrl   = $path . $imageName;
@@ -126,7 +126,7 @@ class SuccessfulTreatmentController extends Controller
         if ($request->hasFile('after_photo')) {
 
             $image      = $request->file('after_photo');
-            $imageName  = 'success_'.date('ymdhis').'.'.$image->getClientOriginalExtension();
+            $imageName  = 'after_'.date('ymdhis').'.'.$image->getClientOriginalExtension();
             $path       = 'images/success/';
             $image->move($path, $imageName);
             $imageUrl   = $path . $imageName;

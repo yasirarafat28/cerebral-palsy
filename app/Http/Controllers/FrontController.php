@@ -3,21 +3,32 @@
 namespace App\Http\Controllers;
 
 use App\Appointment;
+use App\Gallery;
 use App\Inquiry;
+use App\Media;
+use App\SuccessfulTreatment;
+use App\Testimonials;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
 {
     public function home(){
-        return view('index');
+
+        $galleries = Gallery::where('status','active')->get();
+        return view('index',compact('galleries'));
     }
 
     public function testimonials(){
-        return view('testimonials');
+
+        $success_records = SuccessfulTreatment::where('status','active')->get();
+        $testimonials = Testimonials::where('status','active')->get();
+
+        return view('testimonials',compact('success_records','testimonials'));
     }
 
     public function media(){
-        return view('media');
+        $records = Media::where('status','active')->get();
+        return view('media',compact('records'));
     }
 
     public function about_cp(){

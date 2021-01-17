@@ -65,7 +65,7 @@
         </div>
 
         <div class="col-lg-6">
-          <form action="{{route('inquiry.submnit')}}" method="post" role="form" class="php-email-form">
+          <form action="{{route('inquiry.submnit')}}" method="post" role="form" class="">
             @csrf
             <div class="form-row">
               <div class="col form-group">
@@ -86,7 +86,7 @@
               <div class="validate"></div>
             </div>
 
-            <div class="text-center"><button type="submit">Send Message</button></div>
+            <div class="text-center"><button class="appointment-btn " type="submit">Send Message</button></div>
           </form>
         </div>
 

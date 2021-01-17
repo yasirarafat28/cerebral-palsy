@@ -25,11 +25,11 @@
         @endif
             <!-- Page Heading -->
             <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                <h1 class="h3 mb-0 text-gray-800">Successful Treatment</h1>
+                <h1 class="h3 mb-0 text-gray-800">Inquiries</h1>
 
                 <ul class="breadcrumb float-md-right">
                     <li class="breadcrumb-item"><a href="#"><i class="zmdi zmdi-home"></i> Home</a></li>
-                    <li class="breadcrumb-item"><a href="javascript:void(0);">Successful Treatment</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:void(0);">Inquiries</a></li>
                 </ul>
             </div>
 
@@ -46,11 +46,7 @@
                     <div class="header">
                         <div class="clearfix">
                             <div class="float-left">
-                                <h2>Successful Treatment </h2>
-                            </div>
-
-                            <div class="float-right">
-                                <a data-toggle="modal" data-target="#largeModal" class="btn btn-primary"> <i class="fas fa-fw fa-plus"></i> Add </a>
+                                <h2>Inquiries </h2>
                             </div>
                         </div>
 
@@ -61,8 +57,7 @@
                             <tr>
                                 <th># </th>
                                 <th>Name </th>
-                                <th>Before Surgery </th>
-                                <th>After Surgery </th>
+                                <th>Email </th>
                                 <th>Status </th>
                                 <th>Timestamp </th>
                                 <th>Action </th>
@@ -72,8 +67,7 @@
                             <tr>
                                 <th># </th>
                                 <th>Name </th>
-                                <th>Before Surgery </th>
-                                <th>After Surgery </th>
+                                <th>Email </th>
                                 <th>Status </th>
                                 <th>Timestamp </th>
                                 <th>Action </th>
@@ -83,13 +77,8 @@
                             @foreach($records??array() as $item)
                                 <tr>
                                     <td>{{$loop->iteration}}</td>
-                                    <td>{{$item->patient_name}}</td>
-                                    <td>
-                                        <img src="{{url($item->before_photo??"")}}" width="50" alt="">
-                                    </td>
-                                    <td>
-                                        <img src="{{url($item->after_photo??"")}}" width="50" alt="">
-                                    </td>
+                                    <td>{{$item->name}}</td>
+                                    <td>{{$item->email}}</td>
                                     <td>{{$item->status}}</td>
                                     <td>{{$item->created_at}}</td>
                                     <td>
@@ -125,60 +114,7 @@
         <!-- #END# Exportable Table -->
     </div>
 </section>
-<div class="modal fade" id="largeModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
 
-                    <div class="modal-header">
-                        <h2><strong>Add  Succcessful Treatment</strong></h2>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="{{url('admin/successful-treatments')}}" method="POST" enctype="multipart/form-data">
-                            {{csrf_field()}}
-                            <div class="row clearfix">
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="form-group">
-                                        <label for=""><small> Patient Name</small></label>
-                                        <input type="text" class="form-control" placeholder="Patient Name" name="patient_name">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="form-group">
-                                        <label for=""><small> Address</small></label>
-                                        <input type="text" class="form-control" placeholder="Address" name="address">
-                                    </div>
-                                </div>
-
-
-
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="form-group">
-                                        <label for=""><small>Before Photo</small></label>
-                                        <input type="file" class="form-control" placeholder="Before Photo" name="before_photo">
-                                    </div>
-                                </div>
-
-
-
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="form-group">
-                                        <label for=""><small>After Photo</small></label>
-                                        <input type="file" class="form-control" placeholder="After Photo" name="after_photo">
-                                    </div>
-                                </div>
-                                <div class="col-md-12 text-center">
-                                <button type="submit" class="btn btn-info btn-round">Save</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-        </div>
-    </div>
 
 @foreach($records??array() as $item)
 
@@ -195,11 +131,15 @@
                             <table class="table">
                                 <tr>
                                     <td>Name</td>
-                                    <td>{{$item->patient_name}}</td>
+                                    <td>{{$item->name}}</td>
                                 </tr>
                                 <tr>
-                                    <td>Address</td>
-                                    <td>{{$item->address}}</td>
+                                    <td>Email</td>
+                                    <td>{{$item->email}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Content</td>
+                                    <td>{{html_entity_decode($item->message)}}</td>
                                 </tr>
                                 <tr>
                                     <td>Status</td>
@@ -226,46 +166,28 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body">
-                <h4>Update</h4>
-                <form action="{{url('admin/successful-treatments/'.$item->id)}}" method="POST" enctype="multipart/form-data">
+                <h4>Update Complain</h4>
+                <form class="" method="POST" action="{{url('admin/inquiries/'.$item->id)}}" accept-charset="UTF-8" enctype="multipart/form-data">
                     {{csrf_field()}}
                     @method("PATCH")
-                    <div class="row clearfix">
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="form-group">
-                                <label for=""><small> Patient Name</small></label>
-                                <input type="text" class="form-control" value="{{$item->patient_name}}" placeholder="Patient Name" name="patient_name">
+                    <div class="row book-input-row">
+
+                        <div class="col-12 col">
+                            <div class="lesson-input">
+                                <label for="status">Status</label>
+                                <select name="status" id="status">
+                                    <option value="read" {{$item->status=='read'?'selected':''}}>Read</option>
+                                    <option value="pending" {{$item->status=='pending'?'selected':''}}>Pending</option>
+                                </select>
                             </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="form-group">
-                                <label for=""><small> Address</small></label>
-                                <input type="text" class="form-control" value="{{$item->address}}" placeholder="Address" name="address">
-                            </div>
-                        </div>
-
-
-
-                        <div class="col-lg-12 col-md-12">
-                            <div class="form-group">
-                                <label for=""><small>Before Photo</small></label>
-                                <input type="file" class="form-control" placeholder="Before Photo" name="before_photo">
-                            </div>
-                        </div>
-
-
-
-                        <div class="col-lg-12 col-md-12">
-                            <div class="form-group">
-                                <label for=""><small>After Photo</small></label>
-                                <input type="file" class="form-control" placeholder="After Photo" name="after_photo">
-                            </div>
-                        </div>
-                        <div class="col-md-12 text-center">
-                        <button type="submit" class="btn btn-info btn-round">Save</button>
                         </div>
                     </div>
+                    <div class="row card-courses-dec">
+                        <div class="col-12 col">
+                           <button type="submit" class="btn green radius-xl outline">Update</a>
+                        </div>
+                    </div>
+
                 </form>
             </div>
             </div>

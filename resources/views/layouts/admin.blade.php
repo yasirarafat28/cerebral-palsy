@@ -104,6 +104,13 @@
                     <span>Galleries</span>
                 </a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/admin/media">
+                    <i class="fas fa-coins"></i>
+                    <span>Media</span>
+                </a>
+            </li>
+
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">

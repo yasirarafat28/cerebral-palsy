@@ -3,15 +3,20 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Testimonials;
+use App\Media;
 use Illuminate\Http\Request;
 
-class TestimonialController extends Controller
+class MediaController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index()
     {
-        $records = Testimonials::orderBy('created_at','DESC')->paginate(25);
-        return view('admin.testimonials',compact('records'));
+        $records = Media::orderBy('id','DESC')->paginate(25);
+        return view('admin/media',compact('records'));
     }
 
     /**
@@ -32,27 +37,15 @@ class TestimonialController extends Controller
      */
     public function store(Request $request)
     {
-
         $this->validate($request,[
-            'name'=>'required',
-            'designation'=>'required',
-            'message'=>'required',
+            'title'=>'required',
+            'url'=>'required',
         ]);
 
-        $gallery = new Testimonials();
-        $gallery->name = $request->name;
-        $gallery->designation = $request->designation;
-        $gallery->message = $request->message;
-
-        if ($request->hasFile('photo')) {
-
-            $image      = $request->file('photo');
-            $imageName  = 'success_'.date('ymdhis').'.'.$image->getClientOriginalExtension();
-            $path       = 'images/success/';
-            $image->move($path, $imageName);
-            $imageUrl   = $path . $imageName;
-            $gallery->photo = $imageUrl;
-        }
+        $gallery = new Media();
+        $gallery->title = $request->title;
+        $gallery->description = $request->description;
+        $gallery->url = $request->url;
 
         $gallery->status = 'active';
         $gallery->save();
@@ -90,27 +83,16 @@ class TestimonialController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
         $this->validate($request,[
-            'name'=>'required',
-            'designation'=>'required',
-            'message'=>'required',
+            'title'=>'required',
+            'url'=>'required',
         ]);
 
-        $gallery = Testimonials::find($id);
-        $gallery->name = $request->name;
-        $gallery->designation = $request->designation;
-        $gallery->message = $request->message;
-
-        if ($request->hasFile('photo')) {
-
-            $image      = $request->file('photo');
-            $imageName  = 'success_'.date('ymdhis').'.'.$image->getClientOriginalExtension();
-            $path       = 'images/success/';
-            $image->move($path, $imageName);
-            $imageUrl   = $path . $imageName;
-            $gallery->photo = $imageUrl;
-        }
+        $gallery = Media::find($id);
+        $gallery->title = $request->title;
+        $gallery->description = $request->description;
+        $gallery->url = $request->url;
 
         $gallery->status = $request->status;
         $gallery->save();
@@ -125,9 +107,7 @@ class TestimonialController extends Controller
      */
     public function destroy($id)
     {
-
-        $inquiry = Testimonials::destroy($id);
-
-        return back()->withSuccess("Testimonial removed successfully!");
+        $gallery = Media::destroy($id);
+        return back()->withSuccess('removed successfully!');
     }
 }
