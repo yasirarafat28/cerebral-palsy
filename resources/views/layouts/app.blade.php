@@ -75,6 +75,9 @@
     </div>
   </header><!-- End Header -->
 
+
+  @if (isset($homepage) && $homepage=='yes')
+
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -137,8 +140,16 @@
       </a>
 
     </div>
-  </section><!-- End Hero -->
-@yield('content')
+  </section>
+
+  @endif
+
+
+  <main id="main">
+
+    @yield('content')
+
+</main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">

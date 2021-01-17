@@ -1,5 +1,5 @@
 
-@extends('layouts.inner-page')
+@extends('layouts.app')
 
 @section('content')
 

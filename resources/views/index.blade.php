@@ -4,8 +4,6 @@
 @section('content')
 
 
-<main id="main">
-
     <!-- ======= Featured Services Section ======= -->
     <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
@@ -362,7 +360,5 @@
     </section><!-- End Frequently Asked Questioins Section -->
 
 
-
-  </main><!-- End #main -->
 
 @endsection
