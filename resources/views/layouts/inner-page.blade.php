@@ -2,12 +2,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8" />
 
-  <title>Inner Page - Medicio Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+
+    {!! SEO::generate() !!}
 
   <!-- Favicons -->
   <link href="/front/img/favicon.png" rel="icon">
@@ -47,7 +46,7 @@
         <i class="icofont-clock-time"></i> Monday - Saturday, 8AM to 10PM
       </div>
       <div class="d-flex align-items-center">
-        <i class="icofont-phone"></i> Call us now  <a class="ml-4 text-white" href="tel:01711982665">01711982665</a>
+        <i class="icofont-phone"></i> Call us now  <a class="ml-4 text-white" href="tel:{{env('APP_PHONE')}}">{{env('APP_PHONE')}}</a>
       </div>
     </div>
   </div>
@@ -89,25 +88,22 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">
-              <h3>Medicio</h3>
-              <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> <a class="ml-4 text-white" href="tel:01711982665">01711982665</a><br>
-                <strong>Email:</strong> info@example.com<br>
-              </p>
-              <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-info">
+                  <h3>{{env('APP_NAME')}}</h3>
+                  <p>{{env('APP_ADDRESS')}}<br><br>
+                    <strong>Phone:</strong> <a class="ml-4 text-white" href="tel:{{env('APP_PHONE')}}">{{env('APP_PHONE')}}</a><br>
+                    <strong>Email:</strong> {{env('APP_EMAIL')}}<br>
+                  </p>
+                  <div class="social-links mt-3">
+                    <a href="{{env('APP_TWITTER')}}" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="{{env('APP_FACEBOOK')}}" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="{{env('APP_INSTAGRAM')}}" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="{{env('APP_SKYPE')}}" class="google-plus"><i class="bx bxl-skype"></i></a>
+                    <a href="{{env('APP_LINKEDIN')}}" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
@@ -145,7 +141,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Medicio</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>{{env('APP_NAME')}}</span></strong>. All Rights Reserved
       </div>
 
     </div>

@@ -46,7 +46,7 @@
         <i class="icofont-clock-time"></i> Monday - Saturday, 8AM to 10PM
       </div>
       <div class="d-flex align-items-center">
-        <i class="icofont-phone"></i> Call us now <a class="ml-4 text-white" href="tel:01711982665">01711982665</a>
+        <i class="icofont-phone"></i> Call us now <a class="ml-4 text-white" href="tel:{{env('APP_PHONE')}}">{{env('APP_PHONE')}}</a>
       </div>
     </div>
   </div>
@@ -132,7 +132,7 @@
               <p>
                 A108 Adam Street <br>
                 NY 535022, USA<br><br>
-                <strong>Phone:</strong> <a class="ml-4 text-white" href="tel:01711982665">01711982665</a><br>
+                <strong>Phone:</strong> <a class="ml-4 text-white" href="tel:{{env('APP_PHONE')}}">{{env('APP_PHONE')}}</a><br>
                 <strong>Email:</strong> info@example.com<br>
               </p>
               <div class="social-links mt-3">
