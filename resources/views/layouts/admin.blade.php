@@ -79,6 +79,13 @@
             </li>
 
             <li class="nav-item active">
+                <a class="nav-link" href="/admin/successful-treatments">
+                    <i class="fas fa-coins"></i>
+                    <span>Success Treatment</span>
+                </a>
+            </li>
+
+            <li class="nav-item active">
                 <a class="nav-link" href="/admin/inquiries">
                     <i class="fas fa-coins"></i>
                     <span>Inquiry</span>
@@ -89,6 +96,12 @@
                 <a class="nav-link" href="/admin/appointments">
                     <i class="fas fa-coins"></i>
                     <span>Appointments</span>
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/admin/galleries">
+                    <i class="fas fa-coins"></i>
+                    <span>Galleries</span>
                 </a>
             </li>
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Inquiry;
 use Illuminate\Http\Request;
 
 class InquiryController extends Controller
@@ -14,7 +15,8 @@ class InquiryController extends Controller
      */
     public function index()
     {
-        //
+        $records = Inquiry::orderBy('created_at','DESC')->paginate(25);
+        return view('admin.inquiries',compact('records'));
     }
 
     /**
@@ -70,6 +72,16 @@ class InquiryController extends Controller
     public function update(Request $request, $id)
     {
         //
+
+        $this->validate($request,[
+            'status'=>'required'
+        ]);
+
+        $inquiry = Inquiry::find($id);
+        $inquiry->status = $request->status;
+        $inquiry->save();
+
+        return back()->withSuccess("Inquiry saved successfully!");
     }
 
     /**
@@ -80,6 +92,9 @@ class InquiryController extends Controller
      */
     public function destroy($id)
     {
-        //
+
+        $inquiry = Inquiry::destroy($id);
+
+        return back()->withSuccess("Inquiry removed successfully!");
     }
 }

@@ -16,10 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'FrontController@home');
 Route::get('/about-us', 'FrontController@about_us');
 Route::get('/contact-us', 'FrontController@contact_us');
+Route::post('/contact-us', 'FrontController@inquirySubmit')->name('inquiry.submnit');
 Route::get('/cp-treatment', 'FrontController@about_cp');
 Route::get('/media', 'FrontController@media');
 Route::get('/testimonials', 'FrontController@testimonials');
 Route::get('/appointment', 'FrontController@appointment');
+Route::post('/appointment-submit', 'FrontController@appointmentSubmit')->name('appointment.submnit');
 
 Route::get('inner-page', function () {
 
@@ -34,6 +36,8 @@ Route::group(['middleware' => ['auth'],'prefix'=>'admin','namespace'=>'Admin'], 
     Route::resource('testimonials', 'TestimonialController');
     Route::resource('inquiries', 'InquiryController');
     Route::resource('appointments', 'AppointmentController');
+    Route::resource('galleries', 'GalleryController');
+    Route::resource('successful-treatments', 'SuccessfulTreatmentController');
 });
 
 
