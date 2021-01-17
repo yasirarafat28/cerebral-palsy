@@ -146,46 +146,36 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">
-              <h3>{{env('APP_NAME')}}</h3>
-              <p>{{env('APP_ADDRESS')}}<br><br>
-                <strong>Phone:</strong> <a class="ml-4 text-white" href="tel:{{env('APP_PHONE')}}">{{env('APP_PHONE')}}</a><br>
-                <strong>Email:</strong> {{env('APP_EMAIL')}}<br>
-              </p>
-              <div class="social-links mt-3">
-                <a href="{{env('APP_TWITTER')}}" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="{{env('APP_FACEBOOK')}}" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="{{env('APP_INSTAGRAM')}}" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="{{env('APP_SKYPE')}}" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="{{env('APP_LINKEDIN')}}" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <div class="col-md-4">
+                <div class="footer-info">
+                  <h3>{{env('APP_NAME')}}</h3>
+                  <p>{{env('APP_ADDRESS')}}<br><br>
+                    <strong>Phone:</strong> <a class="ml-4 text-white" href="tel:{{env('APP_PHONE')}}">{{env('APP_PHONE')}}</a><br>
+                    <strong>Email:</strong> {{env('APP_EMAIL')}}<br>
+                  </p>
+                  <div class="social-links mt-3">
+                    <a href="{{env('APP_TWITTER')}}" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="{{env('APP_FACEBOOK')}}" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="{{env('APP_INSTAGRAM')}}" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="{{env('APP_SKYPE')}}" class="google-plus"><i class="bx bxl-skype"></i></a>
+                    <a href="{{env('APP_LINKEDIN')}}" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
+          <div class="col-md-4 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+
+                <li><i class="bx bx-chevron-right"></i> <a href="{{url('/about-us')}}">Know us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="{{url('cp-treatment')}}">CP Treatment</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="{{url('media')}}">Media Release</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="{{url('testimonials')}}">Happy Patients</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="{{url('/contact-us')}}">Contact</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
+          <div class="col-md-4 footer-newsletter">
             <h4>Our Newsletter</h4>
             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
             <form action="" method="post">
