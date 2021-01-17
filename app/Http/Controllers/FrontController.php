@@ -39,9 +39,6 @@ class FrontController extends Controller
 
 
     public function media(){
-
-
-
         SEO::setTitle("Media Releases");
         SEO::setDescription("Treatment for cerebral palsy can be complex, addressing a wide range of individual symptoms and conditions. As a result, doctors and medical specialists from multiple disciplines work together improving outcomes for children with CP. Early intervention and treatment have the greatest positive impact. ");
 
