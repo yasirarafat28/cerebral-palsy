@@ -36,6 +36,8 @@ class FrontController extends Controller
         return view('testimonials',compact('success_records','testimonials'));
     }
 
+
+
     public function media(){
 
 
