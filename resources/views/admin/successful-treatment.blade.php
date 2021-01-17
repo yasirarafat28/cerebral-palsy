@@ -195,15 +195,11 @@
                             <table class="table">
                                 <tr>
                                     <td>Name</td>
-                                    <td>{{$item->name}}</td>
+                                    <td>{{$item->patient_name}}</td>
                                 </tr>
                                 <tr>
-                                    <td>Email</td>
-                                    <td>{{$item->email}}</td>
-                                </tr>
-                                <tr>
-                                    <td>Content</td>
-                                    <td>{{html_entity_decode($item->message)}}</td>
+                                    <td>Address</td>
+                                    <td>{{$item->address}}</td>
                                 </tr>
                                 <tr>
                                     <td>Status</td>
