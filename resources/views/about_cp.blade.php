@@ -22,11 +22,11 @@
     <div class="container aos-init aos-animate" data-aos="fade-up">
 
       <div class="section-title">
-        <h2>Departments</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <h2>About CP Treatment</h2>
+        <p>{!! App\PageContent::getContent('about_cp') !!}</p>
       </div>
 
-      <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+      <div class="row aos-init aos-animate d-none" data-aos="fade-up" data-aos-delay="100">
         <div class="col-lg-4 mb-5 mb-lg-0">
           <ul class="nav nav-tabs flex-column">
             <li class="nav-item">

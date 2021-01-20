@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" href="{{asset('admin/plugins/datatable/dataTables.bootstrap4.min.css')}}" media="all">
 
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
 
 
 
@@ -30,6 +31,7 @@
 
     <!-- Custom styles for this template-->
     <link href="/admin/css/sb-admin-2.min.css" rel="stylesheet">
+
 
     @yield('style')
 
@@ -108,6 +110,12 @@
                 <a class="nav-link" href="/admin/media">
                     <i class="fas fa-coins"></i>
                     <span>Media</span>
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/admin/page-contents">
+                    <i class="fas fa-coins"></i>
+                    <span>Page Contents</span>
                 </a>
             </li>
 
@@ -430,10 +438,17 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js"></script>
 
 
+<!-- include summernote css/js-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
 
 
 <script>
     $(function() {
+
+        $('.summernote').summernote({
+            height: 300,
+        });
+
         $('.dataTable').DataTable({
             //dom: 'lBfrtp',
             dom: 'lBfrtp',
@@ -503,6 +518,10 @@
 
 
     @yield('script')
+
+    <script>
+
+    </script>
 </body>
 
 </html>

@@ -39,6 +39,7 @@ Route::group(['middleware' => ['auth'],'prefix'=>'admin','namespace'=>'Admin'], 
     Route::resource('galleries', 'GalleryController');
     Route::resource('successful-treatments', 'SuccessfulTreatmentController');
     Route::resource('media', 'MediaController');
+    Route::resource('page-contents', 'PageContentController');
 });
 
 

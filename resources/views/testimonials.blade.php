@@ -23,7 +23,7 @@
 
       <div class="section-title">
         <h2>Patients</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>{!! App\PageContent::getContent('happy_patients') !!}</p>
       </div>
 
       <div class="row">
@@ -71,7 +71,7 @@
 
       <div class="section-title">
         <h2>Testimonials</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>{!! App\PageContent::getContent('testimonials') !!}</p>
       </div>
 
       <div class="owl-carousel testimonials-carousel owl-loaded owl-drag aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">

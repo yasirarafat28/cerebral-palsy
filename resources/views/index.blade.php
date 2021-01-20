@@ -65,14 +65,12 @@
 
         <div class="section-title">
           <h2>Know Us</h2>
-          <p>
-            Treatment for cerebral palsy can be complex, addressing a wide range of individual symptoms and conditions. As a result, doctors and medical specialists from multiple disciplines work together improving outcomes for children with CP. Early intervention and treatment have the greatest positive impact. Sadly, a cure for cerebral palsy (C.P) is not yet available; nonetheless, various cerebral palsy treatments and therapies currently exist to enable individuals with this condition to reach their fullest cognitive, emotional and physical potential.
-          </p>
 
+          <p>{!! App\PageContent::getContent('know_us') !!}</p>
 
         </div>
 
-        <div class="row">
+        <div class="row d-none">
           <div class="col-lg-6" data-aos="fade-right">
             <img src="/front/img/poster-1.jpg" class="img-fluid" alt="">
           </div>
@@ -103,7 +101,7 @@
     </section><!-- End About Us Section -->
 
     <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
+    <section id="counts" class="counts d-none">
       <div class="container" data-aos="fade-up">
 
         <div class="row no-gutters">
@@ -275,7 +273,7 @@
 
         <div class="section-title">
           <h2>Gallery</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>{!! App\PageContent::getContent('gallery') !!}</p>
         </div>
 
         <div class="owl-carousel gallery-carousel" data-aos="fade-up" data-aos-delay="100">

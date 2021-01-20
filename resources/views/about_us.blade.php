@@ -25,18 +25,11 @@
 
           <div class="section-title">
             <h2>Know Us</h2>
-            <p>
-              Treatment for cerebral palsy can be complex, addressing a wide range of individual symptoms and conditions. As a result, doctors and medical specialists from multiple disciplines work together improving outcomes for children with CP. Early intervention and treatment have the greatest positive impact. Sadly, a cure for cerebral palsy (C.P) is not yet available; nonetheless, various cerebral palsy treatments and therapies currently exist to enable individuals with this condition to reach their fullest cognitive, emotional and physical potential.
-            </p>
 
-            <br>
-            <p>
-              The purpose of treatment is to enhance the quality of life for each patient, creating rewarding outcomes for children with all types of cerebral palsy. By improving overall health and reducing the incidence of complications, treatment reinforces independence and prepares CP patients to lead normal daily lives.
-            </p>
-
+            <p>{!! App\PageContent::getContent('know_us') !!}</p>
           </div>
 
-          <div class="row">
+          <div class="row d-none">
             <div class="col-lg-6" data-aos="fade-right">
               <img src="/front/img/poster-1.jpg" class="img-fluid" alt="">
             </div>
