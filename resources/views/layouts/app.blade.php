@@ -162,7 +162,7 @@
                 <div class="footer-info">
                   <h3>{{env('APP_NAME')}}</h3>
                   <p>{{env('APP_ADDRESS')}}<br><br>
-                    <strong>Phone:</strong> <a class="ml-4 text-white" href="tel:{{env('APP_PHONE')}}">{{env('APP_PHONE')}}</a><br>
+                    <strong>Phone:</strong> <a class="ml-4 text-dark" href="tel:{{env('APP_PHONE')}}">{{env('APP_PHONE')}}</a><br>
                     <strong>Email:</strong> {{env('APP_EMAIL')}}<br>
                   </p>
                   <div class="social-links mt-3">
