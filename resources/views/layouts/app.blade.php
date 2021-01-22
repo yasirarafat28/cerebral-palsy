@@ -187,7 +187,7 @@
           </div>
 
 
-          <div class="col-md-4 footer-newsletter">
+          <div class="col-md-4 footer-newsletter d-none">
             <h4>Our Newsletter</h4>
             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
             <form action="" method="post">
