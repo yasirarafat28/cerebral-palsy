@@ -5,7 +5,7 @@
 
 
     <!-- ======= Featured Services Section ======= -->
-    <section id="featured-services" class="featured-services">
+    <section id="featured-services" class="featured-services d-none">
       <div class="container" data-aos="fade-up">
 
         <div class="row">
@@ -46,18 +46,6 @@
       </div>
     </section><!-- End Featured Services Section -->
 
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="text-center">
-          <h3>In an emergency? Need help now?</h3>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="cta-btn scrollto" href="/appointment">Make an Make an Appointment</a>
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
 
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
@@ -99,6 +87,19 @@
 
       </div>
     </section><!-- End About Us Section -->
+
+        <!-- ======= Cta Section ======= -->
+        <section id="cta" class="cta">
+          <div class="container" data-aos="zoom-in">
+
+            <div class="text-center">
+              <h3>In an emergency? Need help now?</h3>
+              <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a class="cta-btn scrollto" href="/appointment">Make an Make an Appointment</a>
+            </div>
+
+          </div>
+        </section><!-- End Cta Section -->
 
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts d-none">
@@ -143,33 +144,47 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon"><i class="icofont-heart-beat"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <h4 class="title"><a href="">Cerebral Palsy</a></h4>
+            <p class="description">
+              Cerebral palsy (CP) is a group of permanent movement disorders that appear in early childhood. Signs and symptoms vary among people and over time.
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon"><i class="icofont-drug"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            <h4 class="title"><a href="">Brain Stoke</a></h4>
+            <p class="description">
+              Brain Attack or Brain stoke occurs when the blood supply to a part of your brain is interrupted due to deficiency of oxygen and nutrients.
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon"><i class="icofont-dna-alt-2"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            <h4 class="title"><a href="">Paralysis</a></h4>
+            <p class="description">
+              Paralysis (also known as plegia) is a loss of motor function in one or more muscles. Paralysis can be accompanied by a loss of feeling .
+
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon"><i class="icofont-heartbeat"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <h4 class="title"><a href="">PLID</a></h4>
+            <p class="description">
+              PLID  is one of the most common vertebral column diseases of elderly people leading to back pain, radicular pain, and subsequently neurological deficit due to nerve root compression.
+
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon"><i class="icofont-disabled"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            <h4 class="title"><a href="">Autism</a></h4>
+            <p class="description">
+              Autism is a developmental disorder characterized by difficulties with social interaction and communication, and by restricted and repetitive behavior.
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon"><i class="icofont-autism"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            <h4 class="title"><a href="">Brain Tumor</a></h4>
+            <p class="description">
+              A brain tumor occurs when abnormal cells form within the brain. There are two main types of tumors: cancerous (malignant) tumors and benign (non-cancerous) tumors.
+            </p>
           </div>
         </div>
 
