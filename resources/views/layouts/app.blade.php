@@ -55,6 +55,7 @@
     <div class="container d-flex align-items-center">
 
       {{-- <a href="/" class="logo mr-auto"><img src="/front/img/logo.png" alt=""></a> --}}
+      {{-- <a href="/" class="logo mr-auto"><img src="/cerebral-palsy-logo.png" alt=""></a> --}}
       <!-- Uncomment below if you prefer to use an image logo -->
       <h2 class="logo mr-auto"><a href="{{url('/')}}" style="color: darkblue;font-size:25px">CP Treatment</a></h2>
 
