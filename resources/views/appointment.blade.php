@@ -44,7 +44,7 @@
         @csrf
         <div class="form-row">
           <div class="col-md-4 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <input type="text" name="name" class="form-control" id="name" required placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
             <div class="validate"></div>
           </div>
           <div class="col-md-4 form-group">
@@ -52,7 +52,7 @@
             <div class="validate"></div>
           </div>
           <div class="col-md-4 form-group">
-            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <input type="tel" class="form-control" name="phone" id="phone" required placeholder="Your Phone" data-rule="minlen:8" data-msg="Please enter at least 8 chars">
             <div class="validate"></div>
           </div>
 
@@ -62,7 +62,7 @@
           </div>
 
           <div class="col-md-4 form-group">
-            <input type="number" name="age" class="form-control datepicker" id="date" placeholder="Patient's Age" >
+            <input type="number" name="age" class="form-control" placeholder="Patient's Age" >
             <div class="validate"></div>
           </div>
         </div>
