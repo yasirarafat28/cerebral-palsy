@@ -8,5 +8,5 @@ class Country extends Model
 {
     //
 
-    private $table='country';
+    protected $table='country';
 }

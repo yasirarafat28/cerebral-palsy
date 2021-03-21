@@ -138,6 +138,14 @@
                                     <td>{{$item->phone}}</td>
                                 </tr>
                                 <tr>
+                                    <td>Whatsapp</td>
+                                    <td>{{$item->whatsapp??''}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Country</td>
+                                    <td>{{$item->country->name??''}}</td>
+                                </tr>
+                                <tr>
                                     <td>Email</td>
                                     <td>{{$item->email}}</td>
                                 </tr>

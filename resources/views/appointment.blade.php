@@ -51,8 +51,22 @@
             <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
             <div class="validate"></div>
           </div>
+
+          <div class="col-md-4 form-group">
+              <select name="country_id" id="" class="form-control">
+                  <option value="">Select your country</option>
+                  @foreach ($countries as $item)
+                  <option value="{{$item->id}}">{{$item->name}}</option>
+
+                  @endforeach
+              </select>
+          </div>
           <div class="col-md-4 form-group">
             <input type="tel" class="form-control" name="phone" id="phone" required placeholder="Your Phone" data-rule="minlen:8" data-msg="Please enter at least 8 chars">
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group">
+            <input type="tel" class="form-control" name="whatsapp" id="whatsapp" required placeholder="Your Whatsapp number" data-rule="minlen:8" data-msg="Please enter at least 8 chars">
             <div class="validate"></div>
           </div>
 

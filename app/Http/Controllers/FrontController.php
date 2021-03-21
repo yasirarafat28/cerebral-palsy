@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Appointment;
+use App\Country;
 use App\Gallery;
 use App\Inquiry;
 use App\Media;
@@ -104,7 +105,9 @@ class FrontController extends Controller
     }
 
     public function appointment(){
-        return view('appointment');
+
+        $countries = Country::get();
+        return view('appointment',compact('countries'));
     }
 
     public function appointmentSubmit(Request $request){
@@ -112,15 +115,18 @@ class FrontController extends Controller
             'name'=>'required',
             'email'=>'required',
             'phone'=>'required',
+            'country_id'=>'required',
             'age'=>'required',
             'date'=>'required',
         ]);
 
         $inquery =new Appointment();
         $inquery->name =$request->name;
+        $inquery->country_id =$request->country_id;
         $inquery->email =$request->email;
         $inquery->message =$request->message;
         $inquery->phone =$request->phone;
+        $inquery->whatsapp =$request->whatsapp;
         $inquery->age =$request->age;
         $inquery->date =$request->date;
         $inquery->save();
